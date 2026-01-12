@@ -86,7 +86,7 @@ html.lenis, html.lenis body {
   width: 100%;
   max-width: 800px;
   height: 500px;
-  background: #F54927;
+  background: #000;
   clip-path: url(#testiClip);
   transform: rotate(0deg);
 }
