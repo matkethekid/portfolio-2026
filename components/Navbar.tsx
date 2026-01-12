@@ -1,9 +1,8 @@
 import Link from "next/link";
 
 const links = [
-    { id: 0, title: "About me", url: "/about" },
-    { id: 1, title: "Projects", url: "/projects" },
-    { id: 2, title: "Contact", url: "/contact" }
+  { id: 0, title: "Projects", url: "/projects" },
+  { id: 1, title: "Contact", url: "/contact" }
 ];
 
 const Navbar = () => {
