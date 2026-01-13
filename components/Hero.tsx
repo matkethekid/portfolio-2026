@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
+    <main className="relative h-screen w-full overflow-hidden bg-black">
       <video src="/herovideo.mp4" autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover z-0"/>
       <div className="absolute inset-0 z-2 pointer-events-none opacity-5">
         <Image src="/nnnoise.svg" alt="noise overlay" fill className="object-cover scale-150"/>
@@ -37,6 +37,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 }
