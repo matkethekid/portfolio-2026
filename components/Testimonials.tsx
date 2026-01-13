@@ -94,28 +94,30 @@ const Testimonials = () => {
                 <div className="w-full flex flex-wrap justify-center items-center gap-10">
                     <motion.div key={currentIndex} custom={direction} variants={variants} initial="enter" animate="center" exit="exit" transition={{ x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } }} className="testimonial-card relative overflow-hidden p-10 flex flex-col justify-between group">
                         <span className="absolute top-10 left-10 text-8xl text-white/50 font-serif leading-none">“</span>
-                            <div className="flex-1 flex items-center justify-center py-10">
-                                <p className="text-md md:text-lg lg:text-2xl text-white italic text-center leading-relaxed">
-                                    {testimonial.message}
-                                </p>
-                            </div>
-                            <div className="flex flex-col items-end self-end">
-                                <h2 className="text-lg md:text-2xl font-bold text-white uppercase tracking-tighter">
-                                    {testimonial.client}
-                                </h2>
-                                <div className="h-0.5 w-12 bg-white my-2 transition-all group-hover:w-full"></div>
-                                <p className="text-sm text-right lg:text-center max-w-50 lg:max-w-full uppercase text-white/80 tracking-widest">
-                                    {testimonial.company}
-                                </p>
-                            </div>
+                        <div className="flex-1 flex items-center justify-center py-10">
+                            <p className="text-md md:text-lg lg:text-2xl text-white italic text-center leading-relaxed">
+                                {testimonial.message}
+                            </p>
+                        </div>
+                        <div className="flex flex-col items-end self-end">
+                            <h2 className="text-lg md:text-2xl font-bold text-white uppercase tracking-tighter">
+                                {testimonial.client}
+                            </h2>
+                            <div className="h-0.5 w-12 bg-white my-2 transition-all group-hover:w-full"></div>
+                            <p className="text-sm text-right lg:text-center max-w-50 lg:max-w-full uppercase text-white/80 tracking-widest">
+                                {testimonial.company}
+                            </p>
+                        </div>
                         <span className="absolute bottom-24 right-10 text-8xl text-white/50 font-serif leading-none">”</span>
                     </motion.div>
-                    <div className="flex flex-row justify-between w-full lg:w-1/2">
-                        <div className="shrink-0 flex z-30">
-                            <button onClick={handlePrevButton} className="cursor-pointer rounded-full p-6 lg:p-10 bg-black"><ArrowLeft/></button>
-                        </div>
-                        <div className="shrink-0 flex z-30">
-                            <button onClick={handleNextButton} className="cursor-pointer rounded-full p-6 lg:p-10 bg-black"><ArrowUpRight className="rotate-45"/></button>
+                    <div className="flex flex-row justify-center w-full">
+                        <div className="flex justify-between w-full lg:w-1/2 lg:max-w-200">
+                            <div className="shrink-0 flex z-30">
+                                <button onClick={handlePrevButton} className="cursor-pointer rounded-full p-6 lg:p-10 bg-black"><ArrowLeft/></button>
+                            </div>
+                            <div className="shrink-0 flex z-30">
+                                <button onClick={handleNextButton} className="cursor-pointer rounded-full p-6 lg:p-10 bg-black"><ArrowUpRight className="rotate-45"/></button>
+                            </div>
                         </div>
                     </div>
                 </div>
