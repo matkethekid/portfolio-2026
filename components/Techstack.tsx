@@ -78,7 +78,7 @@ const databases_tech = [
 
 const Techstack = () => {
   return (
-    <section className='w-full lg:h-[80vh] bg-black flex flex-col lg:flex-row pt-20 pb-20 pl-5 pr-5 lg:pl-20 lg:pr-20 gap-3'>
+    <section className='w-full lg:h-[80vh] bg-black flex flex-col lg:flex-row pt-20 pb-20 pl-5 pr-5 xl:pl-20 xl:pr-20 gap-3'>
         <div className='w-full lg:w-[40%] bg-[#F54927] border border-zinc-800 rounded-[40px] p-10 flex flex-col gap-10'>
             <h1 className='uppercase text-3xl md:text-4xl lg:text-5xl'>frontend</h1>
             <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-3'>
@@ -116,12 +116,12 @@ const Techstack = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-[30%] flex flex-col lg:flex-row gap-3'>
+            <div className='w-full  flex flex-col lg:flex-row gap-3'>
                 <div className='w-full lg:w-1/2 bg-[#4A2C10] rounded-[40px] pt-7 pb-7 pl-5 pr-5 gap-5 flex justify-start items-start flex-col'>
                     <h2>BACKEND</h2>
-                    <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3'>
+                    <div className='w-full flex flex-wrap gap-3'>
                         {backend_tech.map((tech, index) => (
-                            <div key={index} className='h-14 bg-white/30 backdrop-blur-md backdrop-saturate-150 rounded-[20px] flex items-center pl-3 gap-x-3 border border-white/5 transition-colors'>
+                            <div key={index} className='h-14 bg-white/30 backdrop-blur-md backdrop-saturate-150 rounded-[20px] flex items-center justify-center pl-3 pr-3 gap-x-3 border border-white/5 transition-colors'>
                                 <div className='w-9 h-9 flex items-center justify-center bg-white/10 rounded-xl'>
                                     <Image src={tech.src} alt={tech.name} width={20} height={20} loading='lazy' />
                                 </div>
@@ -132,9 +132,9 @@ const Techstack = () => {
                 </div>
                 <div className='w-full lg:w-1/2 bg-[#2D3321] rounded-[40px] pt-7 pb-7 pl-5 pr-5 gap-5 flex justify-start items-start flex-col'>
                     <h2>DATABASES</h2>
-                    <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3'>
+                    <div className='w-full flex flex-wrap gap-3'>
                         {databases_tech.map((tech, index) => (
-                            <div key={index} className='h-14 bg-white/30 backdrop-blur-md backdrop-saturate-150 rounded-[20px] flex items-center pl-3 gap-x-3 border border-white/5 transition-colors'>
+                            <div key={index} className='h-14 bg-white/30 backdrop-blur-md backdrop-saturate-150 rounded-[20px] flex items-center justify-center pl-3 pr-3 gap-x-3 border border-white/5 transition-colors'>
                                 <div className='w-9 h-9 flex items-center justify-center bg-white/10 rounded-xl'>
                                     <Image src={tech.src} alt={tech.name} width={20} height={20} loading='lazy' />
                                 </div>
