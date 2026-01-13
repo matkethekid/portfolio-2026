@@ -2,6 +2,7 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import Techstack from "@/components/Techstack";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Services/>
       <Testimonials/>
       <FeaturedProjects/>
+      <Techstack/>
     </div>
   );
 }

@@ -1,103 +1,48 @@
 "use client";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from "react";
+interface MultiZoomProps {
+  images: string[];
+}
 
-gsap.registerPlugin(ScrollTrigger);
-
-const ScrollingProjects = () => {
-  const sectionRef = useRef(null);
-  const imgRef = useRef(null);
-  const wrapperRef = useRef(null);
-
-  useEffect(() => {
-    const images = gsap.utils.toArray(".project-slide");
-    
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top top",
-        // Što je veći ovaj broj, to će skrol duže trajati (sporije i tečnije)
-        end: "+=5000", 
-        scrub: 1, // '1' dodaje mali "smooth" efekat da ne secka
-        pin: true,
-        anticipatePin: 1,
-      },
-    });
-
-    // 1. ANIMACIJA: Zumiranje prve slike dok ne postane skroz prozirna
-    tl.to(imgRef.current, {
-      scale: 5,
-      opacity: 0,
-      ease: "power2.inOut",
-    })
-    
-    // 2. ANIMACIJA: Horizontalni skrol kroz ostale slike
-    // Pomeramo wrapper ulevo za onoliko ekrana koliko imamo dodatnih slika
-    // pošto prva slika "nestaje", idemo na (broj slika - 1) * 100vw
-    .to(wrapperRef.current, {
-      yPercent: -100 * (images.length - 1),
-      ease: "none",
-    },); // mala pauza nakon zooma radi boljeg osećaja
-
-    return () => {
-      ScrollTrigger.getAll().forEach(t => t.kill());
-    };
-  }, []);
-
+export default function MultiZoomScroll({ images }: MultiZoomProps) {
   return (
-    <section ref={sectionRef} className="h-screen w-full bg-black overflow-hidden relative">
-      
-      {/* PRVA SLIKA: Fixirana preko svega, ona koja se zumira */}
-      <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden">
-        <img 
-          ref={imgRef}
-          src="/testscroll.png" 
-          alt="Main Project"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* HORIZONTALNI WRAPPER: Ovde su poređane ostale slike jedna pored druge */}
-      <div 
-        ref={wrapperRef} 
-        className="flex h-screen w-fit relative z-10"
-      >
-        {/* Prvi 'Slide' je prazan jer se iznad njega zumira glavna slika */}
-        <div className="project-slide w-screen h-full flex-shrink-0 bg-black" />
-
-        {/* Ostale slike koje se vide 'full screen' jedna po jedna */}
-        <div className="project-slide w-screen h-full flex-shrink-0 relative border-l border-white/10">
-          <img 
-            src="/testscroll.png" 
-            alt="Project 2"
-            className="w-full h-full object-cover" 
-          />
-          <div className="absolute bottom-10 left-10 text-white text-4xl font-bold uppercase">Project Two</div>
-        </div>
-
-        <div className="project-slide w-screen h-full flex-shrink-0 relative border-l border-white/10">
-          <img 
-            src="/testscroll.png" 
-            alt="Project 3"
-            className="w-full h-full object-cover" 
-          />
-          <div className="absolute bottom-10 left-10 text-white text-4xl font-bold uppercase">Project Three</div>
-        </div>
-
-        <div className="project-slide w-screen h-full flex-shrink-0 relative border-l border-white/10">
-          <img 
-            src="/testscroll.png" 
-            alt="Project 4"
-            className="w-full h-full object-cover" 
-          />
-          <div className="absolute bottom-10 left-10 text-white text-4xl font-bold uppercase">Project Four</div>
-        </div>
-      </div>
-
-    </section>
+    <div className="relative">
+      {images.map((src, index) => (
+        <SingleZoomSection key={index} src={src} isFirst={index == 0}/>
+      ))}
+    </div>
   );
-};
+}
 
-export default ScrollingProjects;
+function SingleZoomSection({ src, isFirst }: { src: string, isFirst: boolean }) {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end end"],
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 3]);
+  const opacity = useTransform(scrollYProgress, [0.8, 1], [1, 0]);
+  return (
+    <div ref={sectionRef} className="h-[200vh] relative bg-black">
+      <div className="sticky top-0 h-screen w-full overflow-hidden">
+        <motion.div style={{ scale: isFirst ? scale : 1, opacity: isFirst ? opacity : 1 }} className="relative w-full h-full flex justify-center lg:justify-start items-end p-5">
+          <Image src={src} alt="Project image" fill className="w-full h-full object-cover absolute inset-0 z-0"/>
+          <Link href={"/projects"} className='relative overflow-hidden uppercase w-[90%] lg:w-0 pt-10 pb-10 lg:pl-50 lg:pr-50 flex items-center group justify-center bg-[#F54927] rounded-full text-black text-3xl font-bold'>
+            <span className='absolute transition-all duration-300 cubic-bounce group-hover:-translate-y-[350%]'>
+              view work
+            </span>
+            <span className='absolute translate-y-[350%] transition-all duration-300 cubic-bounce group-hover:translate-y-0'>
+              view work
+            </span>
+          </Link>
+        </motion.div>
+      </div>
+    </div>
+  );
+}
