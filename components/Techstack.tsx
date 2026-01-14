@@ -81,9 +81,9 @@ const Techstack = () => {
     <section className='w-full lg:h-[80vh] bg-black flex flex-col lg:flex-row pt-20 pb-20 pl-5 pr-5 xl:pl-20 xl:pr-20 gap-3'>
         <div className='w-full lg:w-[40%] bg-[#F54927] border border-zinc-800 rounded-[40px] p-10 flex flex-col gap-10'>
             <h1 className='uppercase text-3xl md:text-4xl lg:text-5xl'>frontend</h1>
-            <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-3'>
+            <div className='w-full flex flex-wrap gap-3'>
                 {frontend_tech.map((tech, index) => (
-                    <div key={index} className='h-14 bg-white/30 backdrop-blur-md backdrop-saturate-150 rounded-[20px] flex items-center pl-3 gap-x-3 border border-white/5 transition-colors'>
+                    <div key={index} className='h-14 bg-white/30 backdrop-blur-md backdrop-saturate-150 rounded-[20px] flex items-center pl-5 pr-5 gap-x-3 border border-white/5 transition-colors'>
                         <div className='w-9 h-9 flex items-center justify-center bg-white/10 rounded-xl'>
                             <Image src={tech.src} alt={tech.name} width={20} height={20} loading='lazy' />
                         </div>
@@ -103,7 +103,7 @@ const Techstack = () => {
                     Apps for Ambitious Brands
                 </h1>
                 <div className='flex flex-row w-full z-3 group justify-center items-center lg:justify-start'>
-                    <Link href={"/"} className='relative overflow-hidden uppercase w-[90%] lg:w-full xl:w-1/2 h-12 lg:h-25 flex items-center justify-center bg-[#F54927] rounded-full text-black text-xl md:text-2xl lg:text-3xl font-bold'>
+                    <Link href={"/contact"} className='relative overflow-hidden uppercase w-[90%] lg:w-full xl:w-1/2 h-12 lg:h-25 flex items-center justify-center bg-[#F54927] rounded-full text-black text-xl md:text-2xl lg:text-3xl font-bold'>
                         <span className='absolute transition-all duration-300 cubic-bounce group-hover:-translate-y-[350%]'>
                             collaborate
                         </span>
