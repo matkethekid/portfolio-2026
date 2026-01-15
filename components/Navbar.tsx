@@ -11,9 +11,8 @@ const links = [
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
-
   return (
-    <nav className='w-full lg:h-20 max-w-4xl mx-auto p-7 lg:p-15 flex lg:gap-[250px] justify-between items-center z-50 relative'>
+    <nav className='w-full lg:h-20 max-w-4xl mx-auto p-7 lg:p-15 flex lg:gap-62.5 justify-between items-center z-50 relative'>
       <div className='w-14 h-14 z-50 bg-white text-black flex items-center justify-center text-5xl font-bold'>
         <Link href={"/"} onClick={() => setIsSidebarOpen(false)}>M</Link>
       </div>
