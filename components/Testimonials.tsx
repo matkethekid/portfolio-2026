@@ -113,10 +113,10 @@ const Testimonials = () => {
                     <div className="flex flex-row justify-center w-full">
                         <div className="flex justify-between w-full lg:w-1/2 lg:max-w-200">
                             <div className="shrink-0 flex z-30">
-                                <button onClick={handlePrevButton} className="cursor-pointer rounded-full p-6 lg:p-10 bg-black"><ArrowLeft/></button>
+                                <button onClick={handlePrevButton} className="cursor-pointer rounded-full p-6 lg:p-10 bg-black" aria-label="Previous slider button"><ArrowLeft/></button>
                             </div>
                             <div className="shrink-0 flex z-30">
-                                <button onClick={handleNextButton} className="cursor-pointer rounded-full p-6 lg:p-10 bg-black"><ArrowUpRight className="rotate-45"/></button>
+                                <button onClick={handleNextButton} className="cursor-pointer rounded-full p-6 lg:p-10 bg-black" aria-label="Next slider button"><ArrowUpRight className="rotate-45"/></button>
                             </div>
                         </div>
                     </div>

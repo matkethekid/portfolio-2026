@@ -8,7 +8,7 @@ export default function FooterScrollButton() {
   };
 
   return (
-    <button onClick={scrollToHero} className="cursor-pointer">
+    <button onClick={scrollToHero} className="cursor-pointer" aria-label="Move up to beginning">
       <MoveUp />
     </button>
   );

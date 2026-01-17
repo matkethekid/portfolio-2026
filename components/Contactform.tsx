@@ -77,7 +77,7 @@ const Contactform = () => {
                                 className="bg-transparent border-b-4 border-black py-4 text-3xl outline-none focus:placeholder-transparent placeholder:text-gray-200 font-bold uppercase resize-none"
                             />
                         </div>
-                        <button className="group flex items-center justify-between bg-[#F54927] text-white p-6 mt-5 hover:bg-white hover:text-[#F54927] cursor-pointer border-4 border-black transition-colors duration-300">
+                        <button className="group flex items-center justify-between bg-[#F54927] text-white p-6 mt-5 hover:bg-white hover:text-[#F54927] cursor-pointer border-4 border-black transition-colors duration-300" aria-label='Send message'>
                             <span className="text-4xl uppercase">Send it</span>
                             <div className="overflow-hidden w-10 h-10 relative flex items-center justify-center">
                             <MoveRight className="w-10 h-10 absolute transition-transform duration-500 group-hover:translate-x-12" />
