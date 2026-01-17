@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <main className="relative h-screen w-full overflow-hidden bg-black" id="hero">
-      <video src="/herovideo.mp4" autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover z-0"/>
+      <video src="/herovideo.mp4" autoPlay muted loop playsInline preload="auto" poster="/heroposter.png" className="absolute inset-0 w-full h-full object-cover z-0"/>
       <div className="absolute inset-0 z-2 pointer-events-none opacity-5">
         <Image src="/nnnoise.svg" alt="noise overlay" fill className="object-cover scale-150"/>
       </div>
