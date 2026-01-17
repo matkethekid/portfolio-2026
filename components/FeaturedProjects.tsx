@@ -1,9 +1,9 @@
 import ScrollingProjects from "./ScrollingProjects";
 
 const images = [
-  "/clients/aistartup.png",
-  "/clients/precizna.png",
-  "/clients/hikari.png",
+  "/clients/aistartup.avif",
+  "/clients/precizna.avif",
+  "/clients/hikari.avif",
 ];
 
 const FeaturedProjects = () => {

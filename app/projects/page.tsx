@@ -9,28 +9,28 @@ const projects = [
     id: 0,
     title: "Precizna Poljoprivreda",
     description: "A bright and user-friendly platform for precision agriculture - featuring an interactive map, real-time data visualization, and an intuitive admin panel for streamlined land and crop management.",
-    src: "/clients/precizna.png",
+    src: "/clients/precizna.avif",
     url: "https://preciznapoljoprivreda.rs/"
   },
   {
     id: 1,
     title: "AI Startup",
     description: "Great design from uistore.design - fully responsive dark theme with violet highlights.",
-    src: "/clients/aistartup.png",
+    src: "/clients/aistartup.avif",
     url: "https://ai-startup-sigma.vercel.app/"
   },
   {
     id: 2,
     title: "Hikari Agency",
     description: "Hikari Agency is a modern digital agency specializing in fullstack solutions, combining elegant design with robust, scalable technology. Built with a sleek dark theme, the platform reflects Hikari’s core values: precision, innovation, and aesthetic excellence.",
-    src: "/clients/hikari.png",
+    src: "/clients/hikari.avif",
     url: "https://hikariagency.org/"
   },
   {
     id: 3,
     title: "Studio Zid",
     description: "A clean and functional website built for a painting service studio - developed with Next.js and integrated backend for Google-based login and client reviews, combining simplicity with user-focused utility.",
-    src: "/clients/studiozid2.webp",
+    src: "/clients/studiozid2.avif",
     url: "https://studiozid.rs/"
   },
 ];

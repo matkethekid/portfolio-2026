@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { VT323 } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import SmoothScroll from "@/components/SmoothScroll";
 
-const vT323 = VT323({
-  weight: ["400"],
-  subsets: ["latin"]
-});
-
 const helveticaNeueHeavy = localFont({
-  src: "/fonts/HelveticaNeueHeavy.otf"
+  src: "/fonts/HelveticaNeueHeavy.woff2"
 });
 
 export const metadata: Metadata = {

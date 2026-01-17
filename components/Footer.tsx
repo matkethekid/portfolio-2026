@@ -46,7 +46,7 @@ const Footer = async () => {
             </li>
             <li>
               <div className='group relative py-2 overflow-hidden cursor-pointer'>
-                <Link href="/contact" className='relative flex flex-col uppercase text-white font-bold'>
+                <Link href="tel:+38163242823" className='relative flex flex-col uppercase text-white font-bold'>
                   <span className='transition-all duration-500 cubic-bounce group-hover:-translate-y-[120%]'>
                     phone
                   </span>

@@ -19,7 +19,7 @@ const Services = () => {
                     <h2 className='uppercase text-white text-3xl sm:text-5xl'>web applications</h2>
                     <h3 className='text-white text-5xl uppercase tracking-widest absolute top-10 right-10'>01</h3>
                     <div className='flex flex-row w-full items-center justify-center absolute bottom-5 group'>
-                        <Link href={"/"} className='uppercase w-[70%] flex justify-center items-center overflow-hidden pt-7 pb-7 lg:pt-15 lg:pb-15 lg:w-1/2 text-3xl text-center bg-[#F54927] group-hover:bg-[#F54927]/70 rounded-full relative'>
+                        <Link href={"/projects"} className='uppercase w-[70%] flex justify-center items-center overflow-hidden pt-7 pb-7 lg:pt-15 lg:pb-15 lg:w-1/2 text-3xl text-center bg-[#F54927] group-hover:bg-[#F54927]/70 rounded-full relative'>
                             <span className='absolute transition-all duration-300 cubic-bounce group-hover:-translate-y-[350%]'>
                                 projects
                             </span>
@@ -35,7 +35,7 @@ const Services = () => {
                     <h2 className='uppercase text-white text-3xl sm:text-5xl'>websites</h2>
                     <h3 className='text-white text-5xl uppercase tracking-widest absolute top-10 right-10'>02</h3>
                     <div className='flex flex-row w-full items-center justify-center absolute bottom-5 group'>
-                        <Link href={"/"} className='uppercase justify-center items-center flex overflow-hidden w-[70%] pt-7 pb-7 lg:pt-10 lg:pb-10 lg:w-1/2 text-black text-3xl text-center bg-white group-hover:bg-white/90 rounded-full relative'>
+                        <Link href={"/projects"} className='uppercase justify-center items-center flex overflow-hidden w-[70%] pt-7 pb-7 lg:pt-10 lg:pb-10 lg:w-1/2 text-black text-3xl text-center bg-white group-hover:bg-white/90 rounded-full relative'>
                             <span className='absolute transition-all duration-300 cubic-bounce group-hover:-translate-y-[350%]'>
                                 projects
                             </span>

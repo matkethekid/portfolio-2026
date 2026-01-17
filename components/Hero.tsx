@@ -17,7 +17,7 @@ export default function Hero() {
               mateja stoev
             </h1>
             <div className='flex flex-row w-full z-3 group justify-center items-center lg:justify-start'>
-              <Link href={"/"} className='relative overflow-hidden uppercase w-[90%] lg:w-1/2 h-15 lg:h-25 flex items-center justify-center bg-[#F54927] rounded-full text-black text-3xl font-bold'>
+              <Link href={"/contact"} className='relative overflow-hidden uppercase w-[90%] lg:w-1/2 h-15 lg:h-25 flex items-center justify-center bg-[#F54927] rounded-full text-black text-3xl font-bold'>
                 <span className='absolute transition-all duration-300 cubic-bounce group-hover:-translate-y-[350%]'>
                   collaborate
                 </span>
