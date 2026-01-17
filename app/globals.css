@@ -94,3 +94,19 @@ html.lenis, html.lenis body {
   clip-path: url(#testiClip);
   transform: rotate(0deg);
 }
+
+@keyframes hero-arrow {
+  0% { transform: translateX(0); }
+  45% { transform: translateX(110%); }      /* Izađe skroz desno */
+  51% { transform: translateX(-110%); }     /* Trenutni "skok" na levu stranu */
+  100% { transform: translateX(0); }        /* Ulazi s leva na svoje mesto */
+}
+
+.arrow-img {
+  transition: transform 0.3s ease-in-out;
+  fill: white;
+}
+
+.group:hover .arrow-img {
+  animation: hero-arrow .3s ease-in-out;
+}
