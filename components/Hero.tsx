@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <main className="relative h-screen w-full overflow-hidden bg-black" id="hero">
-      <video autoPlay muted loop playsInline preload="auto" {...{ fetchpriority: "high" } as any} poster="/heroposter.avif" className="absolute inset-0 w-full h-full object-cover z-0">
+      <video autoPlay muted loop playsInline preload="auto" {...{ fetchPriority: "high" } as any} poster="/heroposter.avif" className="absolute inset-0 w-full h-full object-cover z-0">
         <source src="/output.webm" type="video/webm" />
         <source src="/herovideo_fixed.mp4" type="video/mp4" />
       </video>

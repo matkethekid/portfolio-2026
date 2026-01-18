@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localFont from "next/font/local";
 import SmoothScroll from "@/components/SmoothScroll";
+import { Inter } from "next/font/google";
 
-const helveticaNeueHeavy = localFont({
-  src: "/fonts/HelveticaNeueHeavy.woff2"
+const inter = Inter({
+  weight: ["900"],
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
@@ -60,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${helveticaNeueHeavy.className} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         <SmoothScroll>
           {children}
         </SmoothScroll>
