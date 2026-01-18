@@ -2,15 +2,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import { Inter } from "next/font/google";
+import type { Viewport } from "next";
 
 const inter = Inter({
   weight: ["900"],
   subsets: ["latin"]
 });
 
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  colorScheme: "dark",
+  maximumScale: 5,
+  userScalable: true,
+};
+
 export const metadata: Metadata = {
   title: "Mateja Stoev - Full-Stack Web Developer",
   description: "Mateja Stoev - Full-Stack Web Developer portfolio",
+  metadataBase: new URL("https://matejastoev.dev"),
   openGraph: {
     title: "Mateja Stoev - Full-Stack Web Developer",
     description: "Full-stack web developer from Serbia",
@@ -27,9 +38,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website"
   },
-  robots: "index, follow",
-  themeColor: "#000000",
-  viewport: "width=device-width, initial-scale=1",
+  robots: {
+    index: true,
+    follow: true
+  },
   keywords: [
     "Mateja Stoev",
     "Mateja Stoev portfolio",
