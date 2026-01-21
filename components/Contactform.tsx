@@ -56,7 +56,7 @@ const Contactform = () => {
                                 name="name"
                                 type="text" 
                                 placeholder="JOHN DOE"
-                                className="bg-transparent border-b-4 border-black py-4 text-3xl outline-none focus:placeholder-transparent placeholder:text-gray-200 font-bold uppercase"
+                                className="bg-transparent border-b-4 border-zinc-900 py-4 text-3xl outline-none focus:placeholder-transparent placeholder:text-gray-200 font-bold uppercase"
                             />
                         </div>
                         <div className="flex flex-col gap-2">
@@ -65,7 +65,7 @@ const Contactform = () => {
                                 name="email"
                                 type="email" 
                                 placeholder="EMAIL@WORK.COM"
-                                className="bg-transparent border-b-4 border-black py-4 text-3xl outline-none focus:placeholder-transparent placeholder:text-gray-200 font-bold uppercase"
+                                className="bg-transparent border-b-4 border-zinc-900 py-4 text-3xl outline-none focus:placeholder-transparent placeholder:text-gray-200 font-bold uppercase"
                             />
                         </div>
                         <div className="flex flex-col gap-2">
@@ -74,7 +74,7 @@ const Contactform = () => {
                                 name="question"
                                 rows={3}
                                 placeholder="WHAT'S ON YOUR MIND?"
-                                className="bg-transparent border-b-4 border-black py-4 text-3xl outline-none focus:placeholder-transparent placeholder:text-gray-200 font-bold uppercase resize-none"
+                                className="bg-transparent border-b-4 border-zinc-900 py-4 text-3xl outline-none focus:placeholder-transparent placeholder:text-gray-200 font-bold uppercase resize-none"
                             />
                         </div>
                         <button className="group flex items-center justify-between bg-[#F54927] text-white p-6 mt-5 hover:bg-white hover:text-[#F54927] cursor-pointer border-4 border-black transition-colors duration-300" aria-label='Send message'>
