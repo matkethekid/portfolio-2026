@@ -33,6 +33,13 @@ const projects = [
     src: "/clients/studiozid2.avif",
     url: "https://studiozid.rs/"
   },
+  {
+    id: 4,
+    title: "Termo Gas",
+    description: "A simple and modern website with light themes for the needs of a company for the installation of heating, cooling and sewage systems.",
+    src: "/clients/termogas.png",
+    url: "https://termogas.rs"
+  },
 ];
 
 const page = () => {
@@ -52,7 +59,7 @@ const page = () => {
                   <h2 className={`text-3xl md:text-4xl lg:text-5xl`}>{project.title}</h2>
                   <p className='max-w-xl text-sm lg:text-base'>{project.description}</p>
                 </div>
-                <Link href={project.url} className="uppercase flex gap-5 group text-xl p-5 bg-[#F54927] w-full lg:w-1/3 justify-center rounded-full items-center">
+                <Link href={project.url} className="uppercase flex gap-5 group text-xl p-5 bg-[#F54927] w-full lg:w-1/2 justify-center rounded-full items-center">
                   View more
                   <div className="overflow-hidden w-7.5 h-7.5 group relative flex justify-center items-center"><MoveRight className="arrow-img"/></div>
                 </Link>
