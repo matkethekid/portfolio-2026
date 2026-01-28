@@ -143,8 +143,8 @@ const Footer = async () => {
       </div>
       <div className="w-full flex flex-col justify-center items-center h-1/2 gap-5 lg:gap-0">
         <h1 className="uppercase text-[#F54927] text-5xl md:text-6xl lg:text-[8rem] xl:text-[10rem] 2xl:text-[13.5rem] text-center">let&apos;s create</h1>
-        <div className="w-full h-full flex justify-start items-center pl-30 pr-30">
-          <p className="uppercase text-white w-full"><FooterGetTime/> / {temperature}&deg;</p>
+        <div className="w-full h-full flex justify-center lg:justify-start items-center pl-10 pr-10">
+          <p className="uppercase text-white w-full text-center"><FooterGetTime/> / {temperature}&deg;</p>
         </div>
       </div>
     </footer>
