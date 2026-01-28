@@ -1,5 +1,14 @@
 import React from "react";
-import { Metadata } from "next";
+import {Metadata, type Viewport} from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  colorScheme: "dark",
+  maximumScale: 5,
+  userScalable: true,
+};
 
 export const metadata: Metadata = {
   title: "Mateja Stoev | Projects",
@@ -21,8 +30,6 @@ export const metadata: Metadata = {
     type: "website"
   },
   robots: "index, follow",
-  themeColor: "#000000",
-  viewport: "width=device-width, initial-scale=1",
   keywords: [
     "Mateja Stoev",
     "Mateja Stoev portfolio",
