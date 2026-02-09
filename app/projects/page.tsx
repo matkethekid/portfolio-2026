@@ -53,7 +53,7 @@ const page = () => {
             {projects.map((project, index) => (
               <div key={index} className='flex flex-col gap-7 p-5'>
                 <div className='aspect-video relative'>
-                  <Image src={project.src} alt={project.title} fill className='object-cover rounded-3xl' priority={index < 2 }/>
+                  <Image src={project.src} alt={project.title} fill sizes="(max-width: 768px) calc(100vw - 40px), calc(50vw - 40px)" className='object-cover rounded-3xl' priority={index < 2 }/>
                 </div>
                 <div className="flex flex-col gap-3">
                   <h2 className={`text-3xl md:text-4xl lg:text-5xl`}>{project.title}</h2>
