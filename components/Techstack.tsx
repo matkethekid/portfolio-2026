@@ -78,7 +78,7 @@ const databases_tech = [
 
 const Techstack = () => {
   return (
-    <section className='w-full lg:h-[80vh] bg-black flex flex-col lg:flex-row pt-20 pb-20 pl-5 pr-5 xl:pl-20 xl:pr-20 gap-3'>
+    <section className='w-full 2xl:h-[80vh] bg-black flex flex-col lg:flex-row pt-20 pb-20 pl-5 pr-5 xl:pl-20 xl:pr-20 gap-3'>
         <div className='w-full lg:w-[40%] bg-[#F54927] border border-zinc-800 rounded-[40px] p-10 flex flex-col gap-10'>
             <h1 className='uppercase text-3xl md:text-4xl lg:text-5xl'>frontend</h1>
             <div className='w-full flex flex-wrap gap-3'>
@@ -93,7 +93,7 @@ const Techstack = () => {
             </div>
         </div>
         <div className='w-full lg:w-[60%] h-full flex flex-col gap-3'>
-            <div className='w-full h-[70%] rounded-[40px] bg-[#d5d2cf] pt-10 pb-7 lg:pt-15 lg:pb-15 pl-15 pr-15 relative px-2 flex flex-col gap-7 justify-between'>
+            <div className='w-full lg:h-full 2xl:h-[70%] rounded-[40px] bg-[#d5d2cf] pt-10 pb-7 lg:pt-15 lg:pb-15 pl-15 pr-15 relative px-2 flex flex-col gap-7 justify-between'>
                 <h1 className='text-black text-2xl md:text-4xl xl:text-5xl uppercase leading-tight'>
                     Building 
                     <span className="relative inline-block mx-2">
