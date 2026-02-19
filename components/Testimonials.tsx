@@ -21,13 +21,13 @@ const testimonials: Testimonial[] = [
     },
     {
         id: 1,
-        message: "Collaborating on our platform redesign was a game-changer. The attention to detail and the ability to translate complex requirements into a seamless user journey is what sets this work apart. Absolute recommendation for high-stakes projects.",
+        message: "He understood our direction from the start and translated it into a modern, functional website tailored to our industry. The collaboration was professional and efficient, with clear communication, deadlines met, and practical solutions for every challenge.",
         client: "Krstan Kešelj",
         company: "Precizna Poljoprivreda"
     },
     {
         id: 2,
-        message: "Rarely do you find someone who can bridge the gap between creative ambition and technical feasibility. The new platform architecture doesn't just look better—it feels more intuitive at every touchpoint. A pivotal partner for any scaling enterprise.",
+        message: "He understood our vision from the very beginning and transformed it into a modern, clear, and highly functional website. The collaboration was professional and seamless, and we especially value his responsiveness, quick turnaround, and practical solutions for every request.",
         client: "Zoran Stanković",
         company: "Precizna Poljoprivreda"
     }
