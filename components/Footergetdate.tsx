@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 
 export default function FooterGetTime() {
@@ -26,15 +27,15 @@ export default function FooterGetTime() {
 }
 
 export function GetCurrentYear() {
-    const [currentYear, setCurrentYear] = useState<number>(0);
-    useEffect(() => {
-      const date = new Date();
-      const year = date.getFullYear();
+  const [currentYear, setCurrentYear] = useState<number>(0);
+  useEffect(() => {
+    const date = new Date();
+    const year = date.getFullYear();
 
-      setCurrentYear(year);
-    }, []);
+    setCurrentYear(year);
+  }, []);
 
-    if (!currentYear) return <span className="opacity-0">Loading...</span>;
+  if (!currentYear) return <span className="opacity-0">Loading...</span>;
 
-    return <span>{currentYear}</span>;
+  return <span>{currentYear}</span>;
 }
