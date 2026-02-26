@@ -3,8 +3,8 @@ import { MoveUp } from "lucide-react";
 
 export default function FooterScrollButton() {
   const scrollToHero = () => {
-    const hero = document.getElementById("hero");
-    hero?.scrollIntoView({ behavior: "smooth" });
+    const start = document.getElementById("navbar");
+    start?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
