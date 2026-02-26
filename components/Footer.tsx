@@ -56,6 +56,18 @@ const Footer = async () => {
                 </Link>
               </div>
             </li>
+            <li>
+              <div className='group relative py-2 overflow-hidden cursor-pointer'>
+                <Link href="https://github.com/matkethekid" target="_blank" className='relative flex flex-col uppercase text-white font-bold'>
+                  <span className='transition-all duration-500 cubic-bounce group-hover:-translate-y-[120%]'>
+                    github
+                  </span>
+                  <span className='absolute top-0 left-0 transition-all duration-500 cubic-bounce translate-y-[120%] group-hover:translate-y-0'>
+                    github
+                  </span>
+                </Link>
+              </div>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col max-w-30">
