@@ -1,10 +1,16 @@
 import FeaturedProjects from "@/components/FeaturedProjects";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Services from "@/components/Services";
-import Techstack from "@/components/Techstack";
 import Testimonials from "@/components/Testimonials";
+import Footer from "@/components/Footer";
+import dynamic from "next/dynamic";
+
+const Services = dynamic(() => import("@/components/Services"), {
+  ssr: true
+});
+const Techstack = dynamic(() => import("@/components/Techstack"), {
+  ssr: true
+});
 
 export default function Home() {
   return (
