@@ -53,6 +53,14 @@ const projects = [
     url: "https://walvayn-ui.vercel.app/",
     github: "https://github.com/matkethekid/walvayn-ui"
   },
+  {
+    id: 6,
+    title: "Real Estate",
+    description: "A modern real estate website inspired by a Figma Community design - featuring a sleek dark theme, elegant property listings, and a user-friendly interface focused on seamless browsing and property discovery.",
+    src: "/clients/realestate.png",
+    url: "https://real-estate-sepia-nine.vercel.app/",
+    github: "https://github.com/matkethekid/real-estate"
+  }
 ];
 
 const page = () => {
