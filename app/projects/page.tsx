@@ -73,7 +73,7 @@ const page = () => {
                   <p className='max-w-xl text-sm lg:text-base'>{project.description}</p>
                 </div>
                 <div className="flex flex-row justify-between items-center pr-10">
-                  <Link href={project.url} className="uppercase flex gap-5 group text-xl p-5 bg-[#F54927] w-full lg:w-1/2 justify-center rounded-full items-center">
+                  <Link href={project.url} className={`uppercase flex gap-5 group text-xl bg-[#F54927] ${project.github != "" ? "w-1/2 p-3" : "w-full p-5"} lg:w-1/2 justify-center rounded-full items-center`}>
                     View more
                     <div className="overflow-hidden w-7.5 h-7.5 group relative flex justify-center items-center"><MoveRight className="arrow-img"/></div>
                   </Link>
