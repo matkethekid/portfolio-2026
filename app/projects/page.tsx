@@ -60,7 +60,15 @@ const projects = [
     src: "/clients/realestate.png",
     url: "https://real-estate-sepia-nine.vercel.app/",
     github: "https://github.com/matkethekid/real-estate"
-  }
+  },
+  {
+    id: 7,
+    title: "Atelier Studio",
+    description: "A sun-drenched language platform inspired by Mediterranean summers - featuring a crisp light theme, breezy Italian and French lessons, and an intuitive interface designed for effortless vocabulary mastery and cultural immersion.",
+    src: "/clients/atelier.avif",
+    url: "https://atelier-studio-kohl-seven.vercel.app/",
+    github: "https://github.com/matkethekid/atelier-studio"
+  },
 ];
 
 const page = () => {
