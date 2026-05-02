@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
     {
         id: 2,
         message: "He understood our vision from the very beginning and transformed it into a modern, clear, and highly functional website. The collaboration was professional and seamless, and we especially value his responsiveness, quick turnaround, and practical solutions for every request.",
-        client: "Zoran Stanković",
+        client: "Zoran Stamenković",
         company: "Precizna Poljoprivreda"
     }
 ];
