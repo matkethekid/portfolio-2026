@@ -102,8 +102,8 @@ const Techstack = () => {
                     </span> 
                     Apps for Ambitious Brands
                 </h1>
-                <div className='flex flex-row w-full z-3 group justify-center items-center lg:justify-start'>
-                    <Link href={"/contact"} className='relative overflow-hidden uppercase w-[90%] lg:w-full xl:w-1/2 h-12 lg:h-25 flex items-center justify-center bg-[#F54927] rounded-full text-black text-xl md:text-2xl lg:text-3xl font-bold'>
+                <div className='flex flex-row w-fit z-3 group justify-center items-center lg:justify-start'>
+                    <Link href={"/contact"} className='relative overflow-hidden uppercase px-25 lg:px-40 h-12 lg:h-25 flex items-center justify-center bg-[#F54927] rounded-full text-black text-xl md:text-2xl lg:text-3xl font-bold'>
                         <span className='absolute transition-all duration-300 cubic-bounce group-hover:-translate-y-[350%]'>
                             collaborate
                         </span>
