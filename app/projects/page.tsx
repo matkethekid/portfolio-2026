@@ -69,6 +69,14 @@ const projects = [
     url: "https://atelier-studio-kohl-seven.vercel.app/",
     github: "https://github.com/matkethekid/atelier-studio"
   },
+  {
+    id: 8,
+    title: "Rajske Kočije",
+    description: "A fast and thoughtfully designed funeral services platform based in Belgrade, featuring a clean light interface, elegant fonts, and a highly optimized user experience. Created to provide comfort, clarity, and effortless navigation for families seeking reliable funeral arrangements and support.",
+    src: "/clients/rajskekocije.avif",
+    url: "https://rajskekocije.rs",
+    github: ""
+  }
 ];
 
 const page = () => {
