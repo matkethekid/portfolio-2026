@@ -32,6 +32,7 @@ function TitleZoomSection() {
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 8]);
   const opacity = useTransform(scrollYProgress, [0.7, 1], [1, 0]);
+  // scrollYProgress - broj 0-1
   const bgColor = useTransform(
     scrollYProgress,
     [0, 0.5],

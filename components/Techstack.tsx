@@ -56,6 +56,11 @@ const backend_tech = [
         src: "/tech/nestjs.webp",
         name: "NestJS"
     },
+    {
+        id: 3,
+        src: "/tech/net.webp",
+        name: "ASP .NET"
+    }
 ];
 
 const databases_tech = [
@@ -73,6 +78,11 @@ const databases_tech = [
         id: 2,
         src: "/tech/postgres.svg",
         name: "Postgres"
+    },
+    {
+        id: 3,
+        src: "/tech/redis.svg",
+        name: "Redis"
     },
 ];
 
